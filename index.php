@@ -9,13 +9,10 @@ if (isset($_GET['action'])) {
       case 'home' :
           home();
           break;
-      case 'lost' :
-          lost();
-          break;
       default :
           home();
-  }
-}
+      }
+    }
 else {
     home();
 }
