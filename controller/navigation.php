@@ -18,3 +18,7 @@ function home(){
     $_GET['action'] = "home";
     require "view/home.php";
 }
+function snow(){
+  $_GET['action'] = "snow";
+  require "view/snow.php";
+}

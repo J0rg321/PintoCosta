@@ -66,6 +66,9 @@
                             <ul class="nav nav-pills ddmenu">
                                 <li><a href="index.php?action=home">Home</a></li>
                             </ul>
+                            <ul class="nav nav-pills ddmenu">
+                                <li><a href="index.php?action=snow">Snow</a></li>
+                            </ul>
                             <!-- on affiche, si la session est active, l'adresse email de l'utilisateur-->
                             <?php if(isset($_SESSION['userEmailAddress'])) :?>
                                 <h6>Vous êtes connecté : <?= $_SESSION['userEmailAddress'];?></h6>
