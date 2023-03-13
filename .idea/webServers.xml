@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="651e139d-7dd3-41be-9766-a6c03c5f9257" name="WebBDProject" url="http://localhost:8081">
-        <fileTransfer port="0" accessType="LOCAL" />
+      <webServer id="618330b8-2194-489a-9ec2-25d97de52fdd" name="Snows" url="http://localhost:8081">
+        <fileTransfer accessType="LOCAL" port="0" />
       </webServer>
     </option>
   </component>

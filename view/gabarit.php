@@ -65,14 +65,8 @@
                         <div class="nav-collapse collapse">
                             <ul class="nav nav-pills ddmenu">
                                 <li><a href="index.php?action=home">Home</a></li>
+                                <li><a href="index.php?action=snows">Snowboard</a></li>
                             </ul>
-                            <ul class="nav nav-pills ddmenu">
-                                <li><a href="index.php?action=snow">Snow</a></li>
-                            </ul>
-                            <!-- on affiche, si la session est active, l'adresse email de l'utilisateur-->
-                            <?php if(isset($_SESSION['userEmailAddress'])) :?>
-                                <h6>Vous êtes connecté : <?= $_SESSION['userEmailAddress'];?></h6>
-                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
@@ -82,19 +76,19 @@
         <div class="row-fluid">
             <div class="span12">
                 <!-- ________ SLIDER_____________-->
-                <?php if((@$_GET['action']=="home")||(!isset($_GET['action']))) :?>
-                    <div id="headerSeparator"></div>
-                    <div class="camera_full_width">
-                        <div id="camera_wrap">
-                            <div data-src="view/content/slider-images/5.jpg" ><div class="camera_caption fadeFromBottom cap1">Les derniers modèles toujours à disposition.</div></div>
-                            <div data-src="view/content/slider-images/1.jpg" ><div class="camera_caption fadeFromBottom cap2">Découvrez des paysages fabuleux.</div></div>
-                            <div data-src="view/content/slider-images/2.jpg" ></div>
-                        </div>
-                        <br style="clear:both"/><div style="margin-bottom:40px"></div>
-                    </div>
-                    <div id="headerSeparator2"></div>
-                    <!-- ________ SLIDER_____________-->
-                <?php endif; ?>
+			  <?php if((@$_GET['action']=="home")||(!isset($_GET['action']))) :?>
+                  <div id="headerSeparator"></div>
+                  <div class="camera_full_width">
+                      <div id="camera_wrap">
+                          <div data-src="view/content/slider-images/5.jpg" ><div class="camera_caption fadeFromBottom cap1">Les derniers modèles toujours à disposition.</div></div>
+                          <div data-src="view/content/slider-images/1.jpg" ><div class="camera_caption fadeFromBottom cap2">Découvrez des paysages fabuleux.</div></div>
+                          <div data-src="view/content/slider-images/2.jpg" ></div>
+                      </div>
+                      <br style="clear:both"/><div style="margin-bottom:40px"></div>
+                  </div>
+                  <div id="headerSeparator2"></div>
+                  <!-- ________ SLIDER_____________-->
+			  <?php endif; ?>
             </div>
         </div>
 
@@ -106,7 +100,7 @@
                     <!--__________CONTENU__________-->
 
                     <div class="span12" id="divMain">
-                        <?=$content; ?>
+					  <?=$content; ?>
                     </div>
 
                     <!--________FIN CONTENU________-->

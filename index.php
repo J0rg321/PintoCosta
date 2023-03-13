@@ -6,13 +6,15 @@ require "controller/navigation.php";
 if (isset($_GET['action'])) {
   $action = $_GET['action'];
   switch ($action) {
-      case 'home' :
-          home();
-          break;
-      default :
-          snow();
-      }
-    }
+	case 'home' :
+	  home();
+	  break;
+	case 'snows' :
+	  snows();
+	default :
+	  lost();
+  }
+}
 else {
-    home();
+  home();
 }
