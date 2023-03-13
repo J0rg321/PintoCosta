@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="WebBDProject">
+  <component name="PublishConfigData" serverName="Snows" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
-      <paths name="WebBDProject">
+      <paths name="Snows">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
