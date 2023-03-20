@@ -7,4 +7,3 @@ function home(){
 function lost(){
   require "view/lost.php";
 }
-

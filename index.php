@@ -2,6 +2,8 @@
 
 session_start();
 require "controller/navigation.php";
+require "controller/users.php";
+//require "controller/snow.php";
 
 if (isset($_GET['action'])) {
   $action = $_GET['action'];
@@ -11,10 +13,16 @@ if (isset($_GET['action'])) {
 	  break;
 	case 'snows' :
 	  snows();
+	  break;
+	case 'login' :
+	  login($_POST);
+	  break;
+	case 'logout' :
+	  logout();
+	  break;
 	default :
 	  lost();
   }
-}
-else {
+} else {
   home();
 }
