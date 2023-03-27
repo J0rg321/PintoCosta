@@ -1,8 +1,15 @@
 <?php
 
-//require "./model/usersService.php";
+require_once "dbConnector.php";
 
-function login($userInputLoginData)
+$pswdHashed = password_hash($pswd, PASSWORD_DEFAULT);
+
+function isLoginCorrect($userInputLoginData, $userPwd):bool{
+  $userPwDd = getUserPwd($userEmailAddress);
+  if(password_verify($userPwd, $userPwdDd)){
+
+  }
+}
 {
   if(isset($userInputLoginData['inputUserEmailAddress'])){
 	if(false){
